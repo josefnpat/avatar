@@ -2,7 +2,6 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,7 +14,9 @@
    inkscape:version="0.48.4 r9939"
    width="1600"
    height="2400"
-   sodipodi:docname="avatar1406266294.svg">
+   sodipodi:docname="avatar.svg">
+  <defs
+     id="defs37" />
   <metadata
      id="metadata3089">
     <rdf:RDF>
