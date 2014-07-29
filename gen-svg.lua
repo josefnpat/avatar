@@ -1,57 +1,6 @@
 #!/usr/bin/lua
 
-local palettes = {
-  remix = {
-    note        = "Romance Bloody Romance: Remixes & B-Sides",
-    colors = {
-      body        = "#f3b390",
-      body_edge   = "#000000",
-      background  = "#5fbfde",
-      lines_dark  = "#e94496",
-      lines_light = "#f1cce0",
-    }
-  },
-  lp = {
-    note = "You're a Woman, I'm a Machine",
-    colors = {
-      body        = "#ffffff",
-      body_edge   = "#000000",
-      background  = "#f0a4be",
-      lines_dark  = "#f0a4be",
-      lines_light = "#f0a4be",
-    }
-  },
-  ep = {
-    note = "Heads Up",
-    colors = {
-      body        = "#ffffff",
-      body_edge   = "#000000",
-      background  = "#ef8812",
-      lines_dark  = "#ef8812",
-      lines_light = "#ef8812",
-    }
-  },
-  single2 = {
-    note = "Blood on Our Hands",
-    colors = {
-      body        = "#ffffff",
-      body_edge   = "#000000",
-      background  = "#bb241d",
-      lines_dark  = "#bb241d",
-      lines_light = "#bb241d",
-    }
-  },
-  single3 = {
-    note = "Black History Month",
-    colors = {
-      body        = "#ffffff",
-      body_edge   = "#383838",
-      background  = "#383838",
-      lines_dark  = "#383838",
-      lines_light = "#383838",
-    }
-  }
-}
+palettes = require("palettes")
 
 reverse = arg[2] == "reverse"
 if arg and arg[1] and palettes[arg[1]] then
@@ -70,15 +19,15 @@ end
 if reverse then
   print("rendering palette `"..palette_name.."` in reverse.")
   --os.execute("cp avatar.src avatar.src.backup")
-  os.execute("cp avatar.svg avatar.src")
+  os.execute("cp "..palette_name.."-avatar.svg avatar.src")
   for name,color in pairs(palettes[palette_name].colors) do
     os.execute("sed -i 's/"..color.."/%%"..name.."%%/' avatar.src")
   end
 else
   print("rendering palette `"..palette_name.."`")
   --os.execute("cp avatar.svg avatar.svg.backup")
-  os.execute("cp avatar.src avatar.svg")
+  os.execute("cp avatar.src "..palette_name.."-avatar.svg")
   for name,color in pairs(palettes[palette_name].colors) do
-    os.execute("sed -i 's/%%"..name.."%%/"..color.."/' avatar.svg")
+    os.execute("sed -i 's/%%"..name.."%%/"..color.."/' "..palette_name.."-avatar.svg")
   end
 end
