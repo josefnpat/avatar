@@ -15,8 +15,7 @@
    width="1600"
    height="2400"
    sodipodi:docname="avatar.svg">
-  <defs
-     id="defs37" />
+  <defs />
   <metadata
      id="metadata3089">
     <rdf:RDF>
@@ -25,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
