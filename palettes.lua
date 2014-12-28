@@ -9,6 +9,16 @@ local palettes = {
       lines_light = "#f1cce0",
     }
   },
+  love = {
+    note = "LÖVE",
+    colors = {
+      body        = "#AAE2F9",
+      body_edge   = "#23A3D7",
+      background  = "#E0F4FC",
+      lines_dark  = "#EB2D6F",
+      lines_light = "#F08CBA",
+    }
+  },
   lp = {
     note = "You're a Woman, I'm a Machine",
     colors = {
