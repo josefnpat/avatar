@@ -58,6 +58,26 @@ local palettes = {
       lines_dark  = "#383838",
       lines_light = "#383838",
     }
+  },
+  dmg_default = {
+    note = "DMG-01 Default",
+    colors = {
+      body         = "#9BBC0F",
+      body_edge    = "#0F380F",
+      background   = "#9BBC0F",
+      lines_dark   = "#8BAC0F",
+      lines_light  = "#306230",
+    }
+  },
+  dmg_pocket = {
+    note = "MGB-001 Default",
+    colors = {
+      body         = "#E3E6C9",
+      body_edge    = "#6C6C4E",
+      background   = "#E3E6C9",
+      lines_dark   = "#8E8B57",
+      lines_light  = "#C3C4A5",
+    }
   }
 }
 

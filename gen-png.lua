@@ -22,9 +22,9 @@ os.execute("inkscape -z -e "..prefix.."-avatar.png"..
 -- split
 os.execute("convert "..prefix.."-avatar.png -crop "..
   width.."x"..(height/2)..
-  " "..prefix.."-avatar-split.png")
+  " +repage "..prefix.."-avatar-split.png")
 
 -- square
 os.execute("convert "..prefix.."-avatar-split-0.png -crop "..
   (height/2).."x"..(height/2).."+"..(width-height/2)..
-  " "..prefix.."-avatar-square.png")
+  " +repage "..prefix.."-avatar-square.png")
