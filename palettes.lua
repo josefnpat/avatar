@@ -78,6 +78,16 @@ local palettes = {
       lines_dark   = "#8E8B57",
       lines_light  = "#C3C4A5",
     }
+  },
+  rbd = {
+    note = "RedBottle Design",
+    colors = {
+      body         = "#FF3333",
+      body_edge    = "#660001",
+      background   = "#CCFF80",
+      lines_dark   = "#5ECC8F",
+      lines_light  = "#75FFB3",
+    }
   }
 }
 
